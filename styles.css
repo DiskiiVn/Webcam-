@@ -8,63 +8,52 @@ body {
     padding: 0;
 }
 
-/* Đường kẻ ngang */
+/* Định dạng chung cho các đường kẻ ngang */
 .horizontal-line {
-    position: fixed;
-    top: 1rem; /* Khoảng cách từ trên cùng */
-    right: 1rem; /* Khoảng cách từ bên phải */
-    width: 100px; /* Chiều dài của đường kẻ */
-    height: 2px; /* Độ dày của đường kẻ */
-    background-color: #333; /* Màu của đường kẻ */
-    border-radius: 2px; /* Tùy chọn: làm cho đường kẻ có cạnh tròn */
-    display: block; /* Đảm bảo đường kẻ ngang hiển thị đúng */
-    text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 2px;
+    text-decoration: none;
+    margin: 10px 0;
+    position: relative;
+    cursor: pointer;
 }
 
 .horizontal-line:hover {
-    background-color: #007bff; /* Màu khi di chuột qua */
+    background-color: #007bff;
 }
 
-/* Định dạng header */
-header {
-    background: #fff;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* Định dạng cho container và danh sách chọn */
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
 }
 
-header h1 {
-    margin: 0;
+.dropdown {
+    position: relative;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-nav ul li a {
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
     text-decoration: none;
-    color: #333;
+    display: block;
 }
 
-nav ul li a:hover {
-    color: #007bff;
-}
-
-/* Định dạng main */
-main {
-    padding: 2rem;
-    text-align: center;
-}
-
-/* Định dạng footer */
-footer {
-    background: #fff;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
