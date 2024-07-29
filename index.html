@@ -3,31 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Background Layout</title>
+    <title>Web Hosting Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Beautiful Background Layout</h1>
+        <h1>Web Hosting Shop</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Cart</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <main>
-        <h2>Welcome to Our Website!</h2>
-        <p>This is an example of a beautiful background layout with a horizontal line link.</p>
-    </main>
-    
-    <a href="https://example.com" class="horizontal-line"></a> <!-- Đường kẻ ngang có liên kết -->
+
+    <section id="home">
+        <h2>Welcome to Our Hosting Service</h2>
+        <p>We provide reliable and affordable hosting solutions for your needs.</p>
+    </section>
+
+    <section id="plans">
+        <h2>Our Hosting Plans</h2>
+        <div class="plan">
+            <h3>Basic Plan</h3>
+            <p>$5/month</p>
+            <button onclick="buyNow('Basic Plan')">Buy Now</button>
+        </div>
+        <div class="plan">
+            <h3>Standard Plan</h3>
+            <p>$10/month</p>
+            <button onclick="buyNow('Standard Plan')">Buy Now</button>
+        </div>
+        <div class="plan">
+            <h3>Premium Plan</h3>
+            <p>$20/month</p>
+            <button onclick="buyNow('Premium Plan')">Buy Now</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Beautiful Background Layout. All rights reserved.</p>
+        <p>&copy; 2024 Web Hosting Shop. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+        </html>
+        
