@@ -1,70 +1,44 @@
-/* Reset một số thuộc tính mặc định của trình duyệt */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Line in Corner</title>
+    <style>
+        /* CSS để tạo đường kẻ ngang */
+        .horizontal-line {
+            position: fixed;
+            top: 1rem; /* Khoảng cách từ trên cùng */
+            right: 1rem; /* Khoảng cách từ bên phải */
+            width: 100px; /* Chiều dài của đường kẻ */
+            height: 2px; /* Độ dày của đường kẻ */
+            background-color: #333; /* Màu của đường kẻ */
+            border-radius: 2px; /* Tùy chọn: làm cho đường kẻ có cạnh tròn */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Horizontal Line in Corner Layout</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Nội dung chính của trang -->
+    </main>
+    
+    <div class="horizontal-line"></div> <!-- Đường kẻ ngang nằm ở góc -->
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    position: relative;
-    min-height: 100vh; /* Đảm bảo chiều cao của trang ít nhất bằng chiều cao của viewport */
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 2rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.menu-toggle {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-}
-
-.bar {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-    transition: background-color 0.3s;
-}
-
-.menu-toggle:hover .bar {
-    background-color: #007bff;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    <footer>
+        <p>&copy; 2024 Horizontal Line in Corner Layout. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+            
