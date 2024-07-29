@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List in Corner Example</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Beautiful Background</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient từ màu cam sang màu hồng */
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Ví dụ về đường kẻ ngang */
+        .horizontal-line {
+            position: fixed;
+            top: 1rem; /* Khoảng cách từ trên cùng */
+            right: 1rem; /* Khoảng cách từ bên phải */
+            width: 100px; /* Chiều dài của đường kẻ */
+            height: 2px; /* Độ dày của đường kẻ */
+            background-color: #333; /* Màu của đường kẻ */
+            border-radius: 2px; /* Tùy chọn: làm cho đường kẻ có cạnh tròn */
+            display: block; /* Đảm bảo đường kẻ ngang hiển thị đúng */
+            text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+        }
+
+        .horizontal-line:hover {
+            background-color: #007bff; /* Màu khi di chuột qua */
+        }
+    </style>
 </head>
-<body> <div class="horizontal-line"></div>
+<body>
     <header>
-        <h1>List in Corner Layout</h1>
+        <h1>Beautiful Background Layout</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -23,14 +49,10 @@
         <!-- Nội dung chính của trang -->
     </main>
     
-    <div class="menu-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
+    <a href="https://example.com" class="horizontal-line"></a> <!-- Đường kẻ ngang có liên kết -->
 
     <footer>
-        <p>&copy; 2024 List in Corner Layout. All rights reserved.</p>
+        <p>&copy; 2024 Beautiful Background Layout. All rights reserved.</p>
     </footer>
 </body>
 </html>
