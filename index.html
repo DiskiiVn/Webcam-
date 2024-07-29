@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2b2b2b;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3a3a3a;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #555555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .game {
+            border: 1px solid #444;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #2b2b2b;
+        }
+        .game img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Gaming World</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our gaming website where you can find the latest news and updates on your favorite games.</p>
+        </section>
+        <section id="games">
+            <h2>Games</h2>
+            <div class="game">
+                <h3>Game Title 1</h3>
+                <img src="game1.jpg" alt="Game 1">
+                <p>Description of Game 1.</p>
+            </div>
+            <div class="game">
+                <h3>Game Title 2</h3>
+                <img src="game2.jpg" alt="Game 2">
+                <p>Description of Game 2.</p>
+            </div>
+        </section>
+        <section id="news">
+            <h2>News</h2>
+            <p>Latest gaming news and updates.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Contact us at <a href="mailto:info@gamingwebsite.com">info@gamingwebsite.com</a>.</p>
+        </section>
+    </div>
+</body>
+</html>
