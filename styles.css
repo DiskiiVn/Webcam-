@@ -10,6 +10,8 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    position: relative;
+    min-height: 100vh; /* Đảm bảo chiều cao của trang ít nhất bằng chiều cao của viewport */
 }
 
 header {
@@ -37,30 +39,23 @@ nav ul li a {
     font-weight: bold;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
+.menu-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
 }
 
-.grid-item {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 1rem;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: background-color 0.3s;
 }
 
-.grid-item a {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.grid-item a:hover {
-    text-decoration: underline;
+.menu-toggle:hover .bar {
+    background-color: #007bff;
 }
 
 footer {
