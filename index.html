@@ -1,70 +1,33 @@
-/* Nền Gradient */
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient từ màu cam sang màu hồng */
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Background Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Beautiful Background Layout</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Welcome to Our Website!</h2>
+        <p>This is an example of a beautiful background layout with a horizontal line link.</p>
+    </main>
+    
+    <a href="https://example.com" class="horizontal-line"></a> <!-- Đường kẻ ngang có liên kết -->
 
-/* Đường kẻ ngang */
-.horizontal-line {
-    position: fixed;
-    top: 1rem; /* Khoảng cách từ trên cùng */
-    right: 1rem; /* Khoảng cách từ bên phải */
-    width: 100px; /* Chiều dài của đường kẻ */
-    height: 2px; /* Độ dày của đường kẻ */
-    background-color: #333; /* Màu của đường kẻ */
-    border-radius: 2px; /* Tùy chọn: làm cho đường kẻ có cạnh tròn */
-    display: block; /* Đảm bảo đường kẻ ngang hiển thị đúng */
-    text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
-}
-
-.horizontal-line:hover {
-    background-color: #007bff; /* Màu khi di chuột qua */
-}
-
-/* Định dạng header */
-header {
-    background: #fff;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-nav ul li a:hover {
-    color: #007bff;
-}
-
-/* Định dạng main */
-main {
-    padding: 2rem;
-    text-align: center;
-}
-
-/* Định dạng footer */
-footer {
-    background: #fff;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-}
+    <footer>
+        <p>&copy; 2024 Beautiful Background Layout. All rights reserved.</p>
+    </footer>
+</body>
+</html>
